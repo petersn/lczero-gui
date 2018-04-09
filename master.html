@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>lczero-gui</title>
+		<link rel="stylesheet" href="libs/normalize.css">
+		<link rel="stylesheet" href="libs/milligram.min.css">
+		<link rel="stylesheet" href="libs/styling.css">
+		<script>
+window.$ = window.jQuery = require("./libs/jquery-3.2.1.min.js");
+window.jQuery_tmpl = require("./libs/jquery.tmpl.min.js");
+window.jQuery_color = require("./libs/jquery.color-2.1.2.min.js");
+window.socketio = require("./libs/socket.io.js");
+var $ = window.$;
+
+const assert = require("assert").strict;
+const electron = require("electron");
+const child_process = require("child_process");
+const readline = require("readline");
+const process = require("process");
+const path = require("path");
+const url = require("url");
+const fs = require("fs");
+const chess = require("chess.js");
+const chessboard = require("chessboardjs");
+
+function url_for(s) {
+	return url.format({
+		pathname: path.join(__dirname, s),
+		protocol: "file:",
+		slashes: true
+	});
+}
+
+var current_page;
+function set_page(page_name, callback) {
+	current_page = page_name;
+	var u = url_for(page_name);
+	console.log("Switching to: " + u);
+	$("body").load(u, callback);
+}
+
+$(document).ready(function() {
+	set_page("login.html");
+});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

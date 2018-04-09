@@ -1,0 +1,27 @@
+{
+  "name": "lczero-gui",
+  "version": "1.0.0",
+  "description": "GUI for donating GPU time to the Leela Chess Zero project.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petersn/lczero-gui.git"
+  },
+  "author": "Peter Schmidt-Nielsen",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/petersn/lczero-gui/issues"
+  },
+  "homepage": "https://github.com/petersn/lczero-gui#readme",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  },
+  "dependencies": {
+    "chess.js": "^0.10.2",
+    "chessboardjs": "0.0.1"
+  }
+}

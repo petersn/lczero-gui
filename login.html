@@ -1,0 +1,47 @@
+<html>
+	<body>
+		<div class=rootcolumn style="background-color: #444">
+			<header class=mainheader>
+				<h1 class=rainbow>lczero</h1>
+			</header>
+			<!-- Add in a spacer. -->
+			<div style="height: 150px"></div>
+			<div style="text-align: center">
+				<div style="display: inline-block; background-color: #555; border: 2px solid black; border-radius: 10px; width: 300px; padding: 30px; font-size: 150%">
+					Username: <input id="username" name="username" type="text" style="margin-top: 20px; font-size: 70%"> <br/>
+					Password: <input id="password" name="password" type="password" style="margin-top: 20px; font-size: 70%"> <br/>
+					<button type="button" onclick="launch_computation()" style="margin: auto; display: block">Launch Computation</button>
+
+					<script>
+var settings_state = {"User": "", "Pass": ""};
+
+function launch_computation() {
+	settings_state.User = $.trim($("#username").val());
+	// Require a non-empty username.
+	if (settings_state.User == "") {
+		$("#username").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+		return;
+	}
+	settings_state.Pass = $("#username").val();
+	fs.writeFileSync("settings.json", JSON.stringify(settings_state));
+	set_page("computation.html");
+}
+
+$("#username, #password").on("keyup", function (e) {
+	if (e.keyCode == 13) {
+		launch_computation();
+	}
+});
+
+$("#username").focus();
+
+// Try to read values off the disk.
+var settings_state = JSON.parse(fs.readFileSync("settings.json"));
+$("#username").val(settings_state.User);
+$("#password").val(settings_state.Pass);
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

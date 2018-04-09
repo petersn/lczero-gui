@@ -1,0 +1,248 @@
+Args: [/home/snp/local/leela-chess/go/src/client/lczero --weights=networks/e96cab1928eb924131b2f9d6bc7e1a7a3c457dd940b3d7cafe702a7c99bb6441 -t1 --randomize -n -v1600 --start=train 1884-0 1 --quiet]
+Created dirs data-1884-0
+info depth 18 nodes 1600 nps 1941 score cp 4 winrate 51.16% time 823 pv e2e4 e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 h7h6 f1e2 g8e7
+info string picked e2e4
+info depth 18 nodes 1600 nps 2131 score cp -7 winrate 48.05% time 244 pv e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 h7h6 f1e2 g8e7
+info string picked e7e6
+info depth 18 nodes 1600 nps 2354 score cp 3 winrate 51.02% time 361 pv d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 h7h6 f1e2 g8e7 e1g1
+info string picked c2c4
+info depth 18 nodes 1600 nps 2543 score cp -6 winrate 48.20% time 437 pv c7c5 g1f3 b8c6 b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4
+info string picked c7c5
+info depth 18 nodes 1600 nps 2445 score cp 3 winrate 51.08% time 145 pv g1f3 b8c6 b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4
+info string picked g1f3
+info depth 18 nodes 1600 nps 2355 score cp -5 winrate 48.37% time 374 pv b8c6 b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4 d5c3 b2c3
+info string picked b8c6
+info depth 18 nodes 1600 nps 2295 score cp 2 winrate 50.82% time 236 pv b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4 d5c3 b2c3 f8e7
+info string picked b1c3
+info depth 18 nodes 1600 nps 2153 score cp -5 winrate 48.58% time 397 pv g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4 d5c3 b2c3 f8c5 c1e3
+info string picked a7a5
+info depth 18 nodes 1600 nps 1984 score cp 9 winrate 52.65% time 789 pv d2d4 c5d4 f3d4 g8f6 d4b5 f8c5 c1f4 e8g8 e4e5 f6e8 c3e4 c5b4 e4c3
+info string picked d2d4
+info depth 18 nodes 1600 nps 2152 score cp -14 winrate 45.90% time 190 pv c5d4 f3d4 g8f6 d4b5 f8c5 c1f4 e8g8 e4e5 f6e8 f1e2 d7d6 e5d6 e6e5 f4g3
+info string picked c6d4
+info depth 18 nodes 1600 nps 1907 score cp 11 winrate 53.17% time 774 pv f3d4 c5d4 d1d4 d7d6 c1e3 g8f6 a1d1 f8e7 f1e2 e8g8 e1g1 c8d7 h2h3 d7c6
+info string picked f3d4
+info depth 18 nodes 1600 nps 1848 score cp -15 winrate 45.84% time 78 pv c5d4 d1d4 d7d6 c1e3 g8f6 a1d1 f8e7 f1e2 e8g8 e1g1 c8d7 h2h3 d7c6
+info string picked c5d4
+info depth 18 nodes 1600 nps 1370 score cp 11 winrate 53.18% time 26 pv d1d4 d7d6 c1e3 g8f6 a1d1 f8e7 f1e2 e8g8 e1g1 c8d7 h2h3 d7c6
+info string picked d1d4
+info depth 18 nodes 1600 nps 1604 score cp -14 winrate 45.92% time 52 pv d7d6 c1e3 g8f6 a1d1 f8e7 f1e2 e8g8 e1g1 c8d7 h2h3 d7c6
+info string picked g8e7
+info depth 18 nodes 1600 nps 2010 score cp 9 winrate 52.48% time 485 pv c1f4 e7c6 d4d2 f8c5 c3b5 e6e5 f4g5 f7f6 g5e3 c5e3
+info string picked c1e3
+info depth 18 nodes 1600 nps 2104 score cp -8 winrate 47.57% time 631 pv e7c6 d4d2 f8e7 f1e2 d7d6 a1d1 e8g8 e1g1 a5a4 a2a3
+info string picked e7c6
+info depth 18 nodes 1600 nps 2057 score cp 8 winrate 52.21% time 349 pv d4d2 a5a4 a2a3 f8e7 a1d1 e8g8 f1e2 d7d6 e1g1
+info string picked d4d3
+info depth 18 nodes 1600 nps 2106 score cp -10 winrate 47.01% time 714 pv a5a4 a2a3 f8e7 f1e2 d7d6 a1d1 e8g8 e1g1
+info string picked f8e7
+info depth 18 nodes 1600 nps 2276 score cp 10 winrate 52.87% time 557 pv f1e2 a5a4 a2a3 d7d6 a1d1 e8g8 e1g1 c6e5
+info string picked a1d1
+info depth 18 nodes 1600 nps 2217 score cp -14 winrate 46.00% time 602 pv a5a4 f1e2 a4a3 b2b3 e7b4 e1g1 b4c3 d3c3 e8g8
+info string picked a5a4
+info depth 18 nodes 1600 nps 2102 score cp 12 winrate 53.56% time 536 pv a2a3 e8g8 f1e2 d7d6 e1g1 c6e5 d3c2 c8d7 f2f4
+info string picked f1e2
+info depth 18 nodes 1600 nps 2250 score cp -17 winrate 45.12% time 506 pv e8g8 e1g1 a4a3 b2b3 d7d6 f2f4 c6b4 d3d2 c8d7
+info string picked e8g8
+info depth 18 nodes 1600 nps 2055 score cp 16 winrate 54.54% time 544 pv f2f4 a4a3 b2b3 c6b4 d3d2 d7d6 e1g1 c8d7 f4f5 e6f5 e4f5
+info string picked d3c2
+info depth 18 nodes 1600 nps 1926 score cp -9 winrate 47.47% time 814 pv e7g5 f2f4 g5e7 a2a3 d7d6 c3a4 e6e5 a4b6
+info string picked e7g5
+info depth 18 nodes 1600 nps 1781 score cp 13 winrate 53.63% time 679 pv f2f4 g5h4 g2g3 h4e7 c3a4 c6b4 c2b3 d8a5 a4c3 b4c6 e1g1 d7d6
+info string picked f2f4
+info depth 18 nodes 1600 nps 1800 score cp -22 winrate 43.93% time 169 pv g5h4 g2g3 h4e7 c3a4 c6b4 c2b3 d8a5 a4c3 b4a2 e1g1 a2c3
+info string picked g5h4
+info depth 18 nodes 1600 nps 1801 score cp 16 winrate 54.62% time 526 pv g2g3 h4e7 a2a3 d8a5 e1g1 d7d6 c3b5 f8d8 b2b4 a4b3
+info string picked g2g3
+info depth 18 nodes 1600 nps 1842 score cp -18 winrate 44.94% time 170 pv h4e7 a2a3 d8a5 e1g1 d7d6 c3b5 f8d8 b2b4 a4b3
+info string picked h4e7
+info depth 18 nodes 1600 nps 1860 score cp 15 winrate 54.28% time 177 pv a2a3 d8a5 e1g1 d7d6 c3b5 f8d8 b2b4 a4b3
+info string picked e4e5
+info depth 18 nodes 1600 nps 1859 score cp -16 winrate 45.35% time 800 pv f7f6 e5f6 e7f6 c3a4 d8a5 a4c3 c6b4 c2b3 b4a2 e1g1 a2c3 b2c3
+info string picked g7g6
+info depth 18 nodes 1600 nps 1782 score cp 17 winrate 54.84% time 832 pv c3a4 d8a5 a4c3 c6b4 c2b3 b4a2 e1g1 a2c3 b2c3 a5a3 b3a3 a8a3
+info string picked d1d2
+info depth 18 nodes 1600 nps 1775 score cp 1 winrate 50.53% time 898 pv d8a5 a2a3 f7f6 e5f6 e7f6 e1g1 c6e7 e2f3 e7f5
+info string picked d8c7
+info depth 18 nodes 1600 nps 1801 score cp 5 winrate 51.53% time 810 pv a2a3 c7a5 e1g1 e7c5 e3c5 a5c5 g1g2 c6d4 c2d1 d4b3 d2d3
+info string picked a2a3
+info depth 18 nodes 1600 nps 1883 score cp -10 winrate 46.99% time 324 pv c7a5 e1g1 e7c5 e3c5 a5c5 g1g2 c6d4 c2d1 d4e2 d1e2
+info string picked a8a5
+info depth 18 nodes 1600 nps 1893 score cp 19 winrate 55.35% time 773 pv c3b5 c7d8 e1g1 f7f6 e5f6 e7f6 f1d1 e6e5 f4f5 c6d4
+info string picked e1g1
+info depth 18 nodes 1600 nps 2035 score cp -25 winrate 43.03% time 569 pv f7f5 e5f6 e7f6 c3b5 c7d8 f1d1 e6e5 f4f5 c6d4
+info string picked c7b8
+info depth 18 nodes 1600 nps 1975 score cp 33 winrate 59.16% time 726 pv c3a4 d7d6 e5d6 e7d6 b2b4 c6b4 a3b4 d6b4 a4c3 a5a3 c3b5
+info string picked c3a4
+info depth 18 nodes 1600 nps 1963 score cp -43 winrate 38.29% time 190 pv d7d5 e5d6 e7d6 b2b4 c6b4 a3b4 d6b4 d2d1 e6e5 a4b6
+info string picked f7f6
+info depth 18 nodes 1600 nps 1827 score cp 60 winrate 66.00% time 770 pv e5f6 e7f6 c4c5 c6e7 b2b4 a5a8 a4b6 a8a3 e3f2 b8c7 b6c8 f8c8 b4b5 e7d5
+info string picked e5f6
+info depth 18 nodes 1600 nps 1750 score cp -67 winrate 32.33% time 139 pv e7f6 c4c5 c6e7 b2b4 a5a8 a4b6 a8a3 e3f2 b8c7 b6c8 f8c8 b4b5 e7d5
+info string picked f8f6
+info depth 18 nodes 1600 nps 1923 score cp 75 winrate 69.72% time 748 pv b2b4 a5a8 c4c5 f6f8 b4b5 c6d8 a4b6 a8a3 e3d4 d7d6 c5d6
+info string picked b2b4
+info depth 18 nodes 1600 nps 1735 score cp -87 winrate 27.60% time 343 pv a5a8 c2b3 d7d6 a4b6 a8a7 b6c8 b8c8 e3a7
+info string picked a5a8
+info depth 18 nodes 1600 nps 1773 score cp 82 winrate 71.29% time 197 pv c2b3 d7d6 a4b6 a8a6 c4c5 d6c5 b4c5 a6b6
+info string picked c2b3
+info depth 18 nodes 1600 nps 1828 score cp -99 winrate 25.20% time 435 pv d7d5 c4d5 e6d5 a4b6 c8e6 b6a8 b8a8 b4b5 c6a5 b3a4 a5c4
+info string picked h7h5
+info depth 18 nodes 1600 nps 1753 score cp 132 winrate 81.14% time 871 pv a4b6 d7d6 b6a8 b8a8 b4b5 c6a5 b3a4 b7b6 e3b6 c8b7
+info string picked a4b6
+info depth 18 nodes 1600 nps 1710 score cp -141 winrate 17.41% time 99 pv d7d6 b6a8 b8a8 b4b5 c6a5 b3a4 b7b6 e3b6 c8b7
+info string picked a8a6
+info depth 18 nodes 1600 nps 1783 score cp 143 winrate 82.89% time 781 pv c4c5 a6b6 c5b6 d7d5 b4b5 c6a5 b3c3 a5c4 e2c4 d5c4 c3c4 f6f8 c4c7
+info string picked c4c5
+info depth 18 nodes 1600 nps 1706 score cp -153 winrate 15.66% time 135 pv a6b6 c5b6 d7d5 b4b5 c6a5 b3c3 a5c4 e2c4 d5c4 c3c4 f6f8 c4c7
+info string picked a6b6
+info depth 18 nodes 1600 nps 1801 score cp 149 winrate 83.75% time 412 pv c5b6 d7d5 b4b5 c6d8 b3c3 c8d7 c3c7 b8c7 b6c7 d8f7 a3a4
+info string picked c5b6
+info depth 18 nodes 1600 nps 1522 score cp -155 winrate 15.27% time 45 pv d7d5 b4b5 c6d8 b3c3 c8d7 c3c7 b8c7 b6c7 d8f7 a3a4
+info string picked e7f8
+info depth 18 nodes 1600 nps 1784 score cp 157 winrate 84.90% time 876 pv b4b5 c6e7 e3d4 f6f7 d4e5 b8a8 e2f3 d7d5 f1c1
+info string picked d2d1
+info depth 18 nodes 1600 nps 1750 score cp -144 winrate 16.91% time 898 pv d7d5 b4b5 c6e7 e3d4 f6f7 d4e5 b8a8 d1c1 e7f5 c1c7 f8a3
+info string picked c6d8
+info depth 18 nodes 1600 nps 1745 score cp 170 winrate 86.66% time 902 pv b3c3 f6f7 c3c7 b8a8 c7d8 a8a3 e3c5 a3c3 d8c8 h5h4 c8f8
+info string picked b3c3
+info depth 18 nodes 1600 nps 1739 score cp -187 winrate 11.33% time 375 pv f8e7 c3c7 b8a8 e3d4 f6f8 d4e5 d7d5 c7e7 f8f7 e7d8
+info string picked f8e7
+info depth 18 nodes 1600 nps 1720 score cp 178 winrate 87.63% time 470 pv c3c7 b8a8 e3c1 f6f8 e2f3 d7d5 c7e7 f8f7
+info string picked c3c7
+info depth 18 nodes 1600 nps 1757 score cp -192 winrate 10.76% time 469 pv b8a8 e3c1 f6f8 e2f3 d7d5 c7e7 f8f7 e7d8
+info string picked b8a8
+info depth 18 nodes 1600 nps 1766 score cp 184 winrate 88.38% time 204 pv e3c5 g8f7 d1d7 c8d7 c7d7 a8a3 d7e7 f7g8 e7f6 a3a2
+info string picked d1d3
+info depth 18 nodes 1600 nps 1797 score cp -189 winrate 11.08% time 832 pv f6f7 d3c3 d8c6 b4b5 c6d8 c7c8 a8c8 c3c8
+info string picked g8g7
+info depth 18 nodes 1600 nps 1797 score cp 208 winrate 90.83% time 858 pv e2f3 f6f7 d3c3 d8c6 b4b5 c6d8 c7c8
+info string picked e2f3
+info depth 18 nodes 1600 nps 1808 score cp -211 winrate  8.94% time 644 pv a8a6 d3c3 d8c6 c7c8 e6e5 c8d7 e5f4 e3f4
+info string picked a8a6
+info depth 18 nodes 1600 nps 1847 score cp 196 winrate 89.65% time 522 pv d3c3 d8c6 c7c8 e6e5 f3c6 d7c6 c8c7
+info string picked f1d1
+info depth 18 nodes 1600 nps 1900 score cp -207 winrate  9.24% time 676 pv f6f8 d3d7 c8d7 d1d7 f8f7 d7e7 a6a3 e7f7 d8f7
+info string picked g6g5
+info depth 18 nodes 1600 nps 1709 score cp 209 winrate 90.91% time 919 pv e3d4 g5g4 d4f6 e7f6 f3e2 d8c6 d3d7
+info string picked e3d4
+info depth 18 nodes 1600 nps 1788 score cp -242 winrate  6.52% time 641 pv g5g4 d4f6 g7f6 f3e2 d7d5 d3e3 a6a8
+info string picked d8f7
+info depth 18 nodes 1600 nps 1805 score cp 239 winrate 93.29% time 840 pv d4f6 e7f6 f3h5 g5f4 g3f4 d7d5 c7f7 g7h6
+info string picked d4f6
+info depth 18 nodes 1600 nps 1803 score cp -255 winrate  5.70% time 664 pv e7f6 f3h5 g5f4 g3f4 d7d5 h5f7 c8d7 c7d7 a6b6 g1g2
+info string picked e7f6
+info depth 18 nodes 1600 nps 1813 score cp 245 winrate 93.69% time 256 pv f3h5 g5f4 g3f4 d7d5 h5f7 c8d7 c7d7 a6b6 g1g2
+info string picked f3h5
+info depth 18 nodes 1600 nps 1796 score cp -259 winrate  5.45% time 528 pv g5f4 g3f4 a6b5 h5f7 g7f7 c7c8 b5b6 g1g2 d7d5 f4f5
+info string picked f6d8
+info depth 18 nodes 1600 nps 1822 score cp 256 winrate 94.39% time 778 pv c7c8 d7d5 h5f7 d8b6 g1g2 g5f4 c8g8 g7f6
+info string picked c7c8
+info depth 18 nodes 1600 nps 1743 score cp -287 winrate  4.08% time 108 pv d7d5 h5f7 d8b6 g1g2 g5f4 c8g8 g7f6
+info string picked d7d5
+info depth 18 nodes 1600 nps 1896 score cp 286 winrate 95.88% time 675 pv c8d7 d8f6 d7f7 g7h8 f7f6 h8g8 f6f7 g8h8 f7f8 h8h7
+info string picked c8d7
+info depth 17 nodes 1600 nps 2262 score cp -346 winrate  2.17% time 480 pv d8f6 d7f7 g7h8 f7f6 h8g8 f6f7 g8h8 f7f8 h8h7 f8f7
+info string picked d8f6
+info depth 17 nodes 1600 nps 2194 score cp 337 winrate 97.62% time 606 pv d7f7 g7h8 f7f6 h8g8 f6f7 g8h8 h5g6 a6b6 g1g2 b6d8
+info string picked d7f7
+info depth 17 nodes 1600 nps 2363 score cp -373 winrate  1.62% time 269 pv g7h8 f7f6 h8g8 f6f7 g8h8 h5g6 a6b6 g1f1 b6d8
+info string picked g7h6
+info depth 16 nodes 1600 nps 4245 score cp 419 winrate 99.01% time 268 pv f7g6
+info string picked f7g6
+PGN
+1. e4 e6 2. c4 c5 3. Nf3 Nc6 4. Nc3 a5 5. d4 Nxd4 6. Nxd4 cxd4 7. Qxd4 Ne7
+8. Be3 Nc6 9. Qd3 Be7 10. Rd1 a4 11. Be2 O-O 12. Qc2 Bg5 13. f4 Bh4+ 14. g3
+Be7 15. e5 g6 16. Rd2 Qc7 17. a3 Ra5 18. O-O Qb8 19. Nxa4 f6 20. exf6 Rxf6
+21. b4 Ra8 22. Qb3 h5 23. Nb6 Ra6 24. c5 Rxb6 25. cxb6 Bf8 26. Rdd1 Nd8 27.
+Qc3 Be7 28. Qc7 Qa8 29. Rd3 Kg7 30. Bf3 Qa6 31. Rfd1 g5 32. Bd4 Nf7 33.
+Bxf6+ Bxf6 34. Bxh5 Bd8 35. Qxc8 d5 36. Qd7 Bf6 37. Qxf7+ Kh6 38. Qg6+ 
+END
+Score: 1
+2018/04/09 10:06:28 Completed 0 games in 40.236659086s time
+Args: [/home/snp/local/leela-chess/go/src/client/lczero --weights=networks/e96cab1928eb924131b2f9d6bc7e1a7a3c457dd940b3d7cafe702a7c99bb6441 -t1 --randomize -n -v1600 --start=train 1884-1 1 --quiet]
+200
+map[Content-Length:[78] Server:[nginx/1.10.3 (Ubuntu)] Connection:[keep-alive] Content-Type:[text/plain; charset=utf-8] Date:[Mon, 09 Apr 2018 14:06:28 GMT]]
+File training.0.gz uploaded successfully with fields user=PeterSchmidtNielsen.
+Cleanup training files:
+/home/snp/local/leela-chess/go/src/client/data-1884-0/training.0.gz
+Created dirs data-1884-1
+info depth 18 nodes 1600 nps 2016 score cp 3 winrate 51.00% time 792 pv e2e4 e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 h7h6 f1e2 g8e7
+info string picked e2e4
+info depth 18 nodes 1600 nps 2154 score cp -7 winrate 47.99% time 252 pv e7e6 d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 g8e7 f1d3 e7g6
+info string picked e7e6
+info depth 18 nodes 1600 nps 2290 score cp 3 winrate 51.00% time 368 pv d2d4 d7d5 e4e5 c7c5 c2c3 b8c6 g1f3 h7h6 f1e2 g8e7 e1g1
+info string picked c2c4
+info depth 18 nodes 1600 nps 2566 score cp -6 winrate 48.32% time 439 pv c7c5 g1f3 b8c6 b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4
+info string picked c7c5
+info depth 18 nodes 1600 nps 2676 score cp 3 winrate 50.94% time 147 pv g1f3 b8c6 b1c3 g8f6 f1e2 d7d5 e4d5 e6d5 c4d5 f6d5 d2d4 c5d4 f3d4
+info string picked g1e2
+info depth 18 nodes 1600 nps 2385 score cp 0 winrate 49.82% time 635 pv b8c6 b1c3 g8f6 d2d4 c5d4 e2d4 f8b4 d4c6 d7c6 d1d8 e8d8 f2f3 d8e7 a2a3 b4c3
+info string picked b8a6
+info depth 18 nodes 1600 nps 2044 score cp 13 winrate 53.63% time 778 pv b1c3 g8f6 d2d4 c5d4 e2d4 f8b4 e4e5 f6e4 d1c2 e4c3 b2c3 b4e7 f1d3
+info string picked b1c3
+info depth 18 nodes 1600 nps 2108 score cp -18 winrate 44.99% time 407 pv g8f6 d2d4 c5d4 e2d4 f8b4 e4e5 f6e4 d1c2 e4c3 b2c3 b4e7 f1d3 d7d6
+info string picked d7d6
+info depth 18 nodes 1600 nps 2293 score cp 14 winrate 53.98% time 538 pv d2d4 c5d4 e2d4 g8f6 f1e2 a6c5 c1e3 c5e4 c3e4 f6e4 e1g1
+info string picked d2d4
+info depth 18 nodes 1600 nps 2302 score cp -15 winrate 45.86% time 363 pv c5d4 e2d4 g8f6 f1e2 a6c5 d1c2 f8e7 c1e3 e8g8 e1g1 c8d7
+info string picked g8f6
+info depth 18 nodes 1600 nps 2198 score cp 15 winrate 54.17% time 591 pv d4d5 e6e5 g2g3 g7g6 f1g2 f8g7 h2h3 e8g8 e1g1 a6c7 a2a4 a7a5
+info string picked c1e3
+info depth 18 nodes 1600 nps 1949 score cp -13 winrate 46.27% time 787 pv f8e7 g2g3 c5d4 e2d4 e8g8 f1g2 e6e5 d4f5 c8f5 e4f5 d8c8
+info string picked c5d4
+info depth 18 nodes 1600 nps 2020 score cp 7 winrate 52.09% time 597 pv e2d4 a6c5 d1c2 f6g4 f1e2 g4e3 f2e3 f8e7 e1g1 e8g8 a1d1
+info string picked e2d4
+info depth 18 nodes 1600 nps 1847 score cp -11 winrate 46.92% time 149 pv a6c5 d1c2 f6g4 f1e2 g4e3 f2e3 f8e7 e1g1 e8g8 a1d1 c8d7
+info string picked f8e7
+info depth 18 nodes 1600 nps 2182 score cp 12 winrate 53.33% time 605 pv f1e2 a6c5 d1c2 e8g8 e1g1 e6e5 d4f3 f6g4 e3c5
+info string picked f1e2
+info depth 18 nodes 1600 nps 2212 score cp -15 winrate 45.84% time 338 pv a6c5 d1c2 e8g8 e1g1 e6e5 d4b3 c5e6 a1d1 b7b6
+info string picked e8g8
+info depth 18 nodes 1600 nps 1956 score cp 15 winrate 54.12% time 595 pv e1g1 c8d7 h2h3 a6c5 d1c2 e6e5 d4f3 a8c8
+info string picked d4f3
+info depth 18 nodes 1600 nps 2012 score cp -1 winrate 49.46% time 765 pv b7b6 e1g1 c8b7 d1c2 a6c5 a1d1 f6e4 c3e4 c5e4 e2d3
+info string picked b7b6
+info depth 18 nodes 1600 nps 2041 score cp -6 winrate 48.28% time 265 pv e1g1 c8b7 d1c2 a6c5 a1d1 f6e4 c3e4 c5e4 e2d3
+info string picked d1c2
+info depth 18 nodes 1600 nps 2238 score cp 3 winrate 50.92% time 617 pv c8b7 a1d1 d8c7 e1g1 a6b4 c2b3 b4c6 h2h3 c6a5 b3c2
+info string picked c8b7
+info depth 18 nodes 1600 nps 1953 score cp -7 winrate 47.91% time 342 pv a1d1 d8c7 e1g1 a6c5 f3d2 a7a5 h2h3 h7h6 a2a3
+info string picked a1d1
+info depth 18 nodes 1600 nps 1869 score cp 2 winrate 50.80% time 312 pv d8c7 e1g1 a6c5 f3d4 c5e4 d4b5 c7b8 c3e4
+info string picked a8c8
+info depth 18 nodes 1600 nps 1819 score cp -5 winrate 48.46% time 694 pv e1g1 d8c7 f3d4 a6c5 d4b5 c7b8 f2f3 a7a6 b5d4 f6d7 b2b4 a6a5
+info string picked e1g1
+info depth 18 nodes 1600 nps 1800 score cp 0 winrate 50.01% time 259 pv d8c7 f3d4 a6c5 f2f3 a7a6 b2b4 c5d7 c2b3 d7e5
+info string picked a6c5
+info depth 18 nodes 1600 nps 1760 score cp 10 winrate 52.99% time 845 pv e4e5 f6e4 e5d6 e4d6 e3f4 d8c7 f4d6 e7d6 c3b5 c7b8 b5d6 c8d8 d6b7
+info string picked e4e5
+info depth 18 nodes 1600 nps 1636 score cp -17 winrate 45.31% time 120 pv f6e4 e5d6 e4d6 e3f4 c5e4 c3e4 b7e4 c2d2 d6c4 d2d8 f8d8 d1d8 c8d8 e2c4
+info string picked f6e4
+info depth 18 nodes 1600 nps 1752 score cp 10 winrate 52.98% time 338 pv e5d6 e4d6 e3f4 c5e4 c3e4 b7e4 c2d2 d6c4 d2d8 f8d8 d1d8 e7d8 f1c1 c4b2 c1c8
+info string picked e5d6
+info depth 18 nodes 1600 nps 1729 score cp -14 winrate 45.92% time 180 pv e4d6 e3f4 c5e4 c3e4 b7e4 c2d2 d6f5 d2d8 f8d8 d1d8 c8d8 f1d1 d8d1 e2d1 e7f6 b2b3
+info string picked e4d6
+info depth 18 nodes 1600 nps 1622 score cp 10 winrate 52.94% time 237 pv e3f4 c5e4 c3e4 b7e4 c2c1 d8c7 b2b3 h7h6 f3e5 e4f5
+info string picked e3f4
+info depth 18 nodes 1600 nps 1727 score cp -17 winrate 45.17% time 556 pv c5e4 c3e4 b7e4 c2c1 d8c7 b2b3 h7h6 f1e1 f8d8 f3e5
+info string picked c5a6
+info depth 18 nodes 1600 nps 1730 score cp 59 winrate 65.74% time 896 pv f4d6 e7d6 c3b5 c8c6 b5a7 c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6e7 a2a3 a6c5 b2b4 c5e4 c4c5
+info string picked f4d6
+info depth 18 nodes 1600 nps 1822 score cp -64 winrate 33.08% time 89 pv e7d6 c3b5 c8c6 b5a7 c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6e7 a2a3 a6c5 b2b4 c5e4 c4c5 b6c5 b4c5
+info string picked e7d6
+info depth 18 nodes 1600 nps 1745 score cp 60 winrate 66.10% time 54 pv c3b5 c8c6 b5a7 c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6e7 a2a3 a6c5 b2b4 c5e4 c4c5 b6c5 b4c5
+info string picked c3b5
+info depth 18 nodes 1600 nps 1898 score cp -66 winrate 32.39% time 87 pv c8c6 b5a7 c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6e7 a2a3 a6c5 b2b4 c5e4 c4c5 b6c5 b4c5
+info string picked c8c6
+info depth 18 nodes 1600 nps 2160 score cp 48 winrate 63.13% time 299 pv b5a7 c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6e7 a2a3 a6c5 b2b4 c5e4 e2d3 e4f6 c4c5 b6c5
+info string picked b5a7
+info depth 18 nodes 1600 nps 1833 score cp -55 winrate 35.22% time 137 pv c6c7 a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6c6 a2a3 a6c5 b2b4 c5a4 b4b5 c6c7
+info string picked c6c7
+info depth 18 nodes 1600 nps 1833 score cp 48 winrate 62.93% time 185 pv a7b5 c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6c6 a2a3 a6c5 b2b4 c5a4 b4b5 c6c7
+info string picked a7b5
+info depth 18 nodes 1600 nps 2088 score cp -53 winrate 35.69% time 79 pv c7d7 b5d6 d7d6 d1d6 d8d6 f1d1 d6c6 a2a3 a6c5 b2b4 c5a4 b4b5 c6c7 c2a4
+info string picked c7d7
+info depth 18 nodes 1600 nps 1793 score cp 45 winrate 62.33% time 86 pv b5d6 d7d6 d1d6 d8d6 f1d1 d6c6 a2a3 a6c5 b2b4 c5a4 b4b5 c6c7 c2a4
+info string picked b5d6
+info depth 18 nodes 1600 nps 1869 sco

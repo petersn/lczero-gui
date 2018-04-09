@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<script src="js/chessboard.js"></script>
+		<link rel="stylesheet" href="css/chessboard.css" />
+		<style>
+.centeredboard {
+	margin: auto;
+	right: 0;
+	left: 0;
+	width: 500px;
+	display: inline-block;
+}
+		</style>
+	</head>
+	<body>
+		<div class=rootcolumn style="background-color: #444">
+			<header class=mainheader>
+			</header>
+			<!-- Add in a spacer. -->
+			<div style="height: 0px"></div>
+			<div style="text-align: center">
+				<h2>Current game:</h2>
+
+				<div id="board1" class="centeredboard"></div>
+				<br/>
+
+				<div style="display: inline-block; background-color: #555; border: 2px solid black; border-radius: 10px; width: 600px; padding: 30px; font-size: 150%">
+					<h3>Stats</h3>
+					Games generated (this session): <span id="games_generated">0</span><br/>
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+var display_board = ChessBoard("board1", {
+	position: "start",
+	moveSpeed: 100,
+});
+var game_board = new chess.Chess();
+
+function reset_game() {
+	game_board = new chess.Chess();
+	display_board.position(game_board.fen());
+}
+
+reset_game();
+
+var game_over_regex = /Score:.*/;
+var new_move_regex = /info.* nps ([ 0-9]+).* score cp ([- 0-9]+).* winrate ([ 0-9]+).* pv ([a-z0-9]+).*/;
+var picked_move_regex = /info string picked ([a-z0-9]+).*/;
+var games_completed_regex = /.*Completed ([0-9]+) games in .*/;
+var bad_login_regex = /.*Bad JSON from (.*)/;
+
+function parse_uci_move(uci) {
+//	assert(uci.length == 4 || uci.length == 5, "Bad UCI move string length (must be 4 or 5).");
+	var result = {
+		from: uci.slice(0, 2),
+		to: uci.slice(2, 4),
+	};
+	if (uci.length == 5) {
+		result.promotion = uci.slice(4, -1);
+	}
+	return result;
+}
+
+//process.chdir("/home/snp/local/leela-chess/go/src/client/");
+//var child = child_process.spawn("./client");
+var child = child_process.spawn("./simple.py");
+var linestream = readline.createInterface({input: child.stdout});
+linestream.on("line", (line) => {
+	console.log(`   :: ${line}`);
+	if (bad_login_regex.test(line)) {
+		var match = line.match(bad_login_regex);
+		electron.remote.dialog.showErrorBox(
+			"Remote Error",
+			"Got error from server: " + match[1]
+		);
+		child.kill();
+		set_page("login.html");
+	}
+	if (game_over_regex.test(line)) {
+		console.log(">>> Resetting!");
+		reset_game();
+	}
+	if (new_move_regex.test(line)) {
+		var match = line.match(new_move_regex);
+		var nodes_per_second = parseInt(match[1]);
+		var centipawns = parseInt(match[2]);
+		var winrate = parseFloat(match[3]);
+		var pv_move = parse_uci_move(match[4]);
+	}
+	if (picked_move_regex.test(line)) {
+		var match = line.match(picked_move_regex);
+		var move = parse_uci_move(match[1]);
+		game_board.move(move);
+		display_board.position(game_board.fen());
+	}
+	if (games_completed_regex.test(line)) {
+		var match = line.match(games_completed_regex);
+		var games_completed = parseInt(match[1]);
+		// XXX: This might be fixed, but currently the "Completed games" message is low by one.
+		games_completed++;
+		$("#games_generated").text(games_completed);
+	}
+});
+
+// To hide issues where we get an error and the board isn't nicely rendered yet make the board fade in quickly.
+// It also looks nice as an effect by itself.
+$("#board1").hide();
+$("#board1").fadeIn(250);
+		</script>
+	</body>
+</html>
