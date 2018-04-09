@@ -16,10 +16,14 @@ var DEBUG_MODE = false;
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800 + (DEBUG_MODE ? 500 : 0), height: 609,
+    width: 650 + (DEBUG_MODE ? 500 : 0), height: 800 - 25,
   	useContentSize: true,
+	resizable: false,
 	frame: true,
+/*	titleBarStyle: "hidden" */
   })
+
+  mainWindow.setMenu(null)
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({

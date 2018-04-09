@@ -5,7 +5,7 @@
 				<h1 class=rainbow>lczero</h1>
 			</header>
 			<!-- Add in a spacer. -->
-			<div style="height: 150px"></div>
+			<div style="height: 100px"></div>
 			<div style="text-align: center">
 				<div style="display: inline-block; background-color: #555; border: 2px solid black; border-radius: 10px; width: 300px; padding: 30px; font-size: 150%">
 					Username: <input id="username" name="username" type="text" style="margin-top: 20px; font-size: 70%"> <br/>
@@ -19,23 +19,28 @@ function launch_computation() {
 	settings_state.User = $.trim($("#username").val());
 	// Require a non-empty username.
 	if (settings_state.User == "") {
+		// Flash the username field angrily.
 		$("#username").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
 		return;
 	}
+	// Write out the username and password for ./client to read in.
 	settings_state.Pass = $("#username").val();
 	fs.writeFileSync("settings.json", JSON.stringify(settings_state));
+	// Switch to the computation page, which manages launching ./client.
 	set_page("computation.html");
 }
 
+// If the user hits enter in either the username or password field then launch.
 $("#username, #password").on("keyup", function (e) {
 	if (e.keyCode == 13) {
 		launch_computation();
 	}
 });
 
+// Start the user cursor in the username field.
 $("#username").focus();
 
-// Try to read values off the disk.
+// Try to read the previous values off the disk to populate the fields automatically.
 var settings_state = JSON.parse(fs.readFileSync("settings.json"));
 $("#username").val(settings_state.User);
 $("#password").val(settings_state.Pass);

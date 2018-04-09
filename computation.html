@@ -10,6 +10,12 @@
 	width: 500px;
 	display: inline-block;
 }
+
+.cornerbutton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
 		</style>
 	</head>
 	<body>
@@ -28,8 +34,8 @@
 					<h3>Stats</h3>
 					Games generated (this session): <span id="games_generated">0</span><br/>
 				</div>
-
 			</div>
+			<button id="stopbutton" type="button" onclick="on_stop_button()" class="cornerbutton">Stop</button>
 		</div>
 
 		<script>
@@ -104,6 +110,18 @@ linestream.on("line", (line) => {
 		$("#games_generated").text(games_completed);
 	}
 });
+
+var stop_button_clicked = false;
+function on_stop_button() {
+	if (stop_button_clicked) {
+		set_page("login.html");
+	} else {
+		child.kill()
+		stop_button_clicked = true;
+		$("#board1").fadeTo(500,0.5);
+		$("#stopbutton").text("Restart");
+	}
+}
 
 // To hide issues where we get an error and the board isn't nicely rendered yet make the board fade in quickly.
 // It also looks nice as an effect by itself.
