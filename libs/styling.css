@@ -1,0 +1,111 @@
+
+body {
+/*  background-color: #ddd; */
+  padding: 0px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.bigtt {
+  font-size: 200%;
+  font-family: 'Cousine';
+  margin: auto;
+  display: block;
+  margin: 10px;
+}
+
+.rootcolumn {
+  background-color: white;
+  max-width: 650px;
+  height: 800px;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid black;
+/*  border-radius: 10px; */
+}
+
+.mainheader {
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Cousine';
+}
+
+.maincontents {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mainfooter {
+  background-color: #444;
+  color: white;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cell-container {
+  color: white;
+  background-color: #444;
+  margin-bottom: 20px;
+/*  margin: 20px; */
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.cell-container-header {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Cousine';
+}
+
+.cell {
+  font-family: 'Cousine';
+  color: black;
+  background-color: #555;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.new-game-form {
+  float: right;
+  width: 400px;
+  color: black;
+  background-color: #555;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.rainbow {
+  animation: rainbow 30s infinite;
+  text-shadow: -3px 3px 6px #000;
+  font-size: 800%;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  20%  { color: yellow; }
+  40%  { color: green; }
+  60%  { color: blue; }
+  80%  { color: orange; }
+  100% { color: red; }
+}
+
+input {
+  font-family: 'Cousine';
+}
+
+input[type=submit] {
+  margin: auto;
+  margin-bottom: 10px;
+  display: block;
+}
+
