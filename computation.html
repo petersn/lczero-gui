@@ -55,7 +55,7 @@ reset_game();
 var game_over_regex = /Score:.*/;
 var new_move_regex = /info.* nps ([ 0-9]+).* score cp ([- 0-9]+).* winrate ([ 0-9]+).* pv ([a-z0-9]+).*/;
 var picked_move_regex = /info string picked ([a-z0-9]+).*/;
-var games_completed_regex = /.*Completed ([0-9]+) games in .*/;
+//var games_completed_regex = /.*Completed ([0-9]+) games in .*/;
 var bad_login_regex = /.*Bad JSON from (.*)/;
 
 function parse_uci_move(uci) {
@@ -71,8 +71,8 @@ function parse_uci_move(uci) {
 }
 
 //process.chdir("/home/snp/local/leela-chess/go/src/client/");
-//var child = child_process.spawn("./client");
-var child = child_process.spawn("./simple.py");
+var child = child_process.spawn("./client");
+//var child = child_process.spawn("./simple.py");
 var linestream = readline.createInterface({input: child.stdout});
 linestream.on("line", (line) => {
 	console.log(`   :: ${line}`);
@@ -86,6 +86,7 @@ linestream.on("line", (line) => {
 		set_page("login.html");
 	}
 	if (game_over_regex.test(line)) {
+		increment_game_counter();
 		console.log(">>> Resetting!");
 		reset_game();
 	}
@@ -102,6 +103,7 @@ linestream.on("line", (line) => {
 		game_board.move(move);
 		display_board.position(game_board.fen());
 	}
+/*
 	if (games_completed_regex.test(line)) {
 		var match = line.match(games_completed_regex);
 		var games_completed = parseInt(match[1]);
@@ -109,7 +111,15 @@ linestream.on("line", (line) => {
 		games_completed++;
 		$("#games_generated").text(games_completed);
 	}
+*/
 });
+
+var games_completed = 0;
+function increment_game_counter() {
+	games_completed++;
+	// TODO: Log this to a file so our user can feel good about themselves.
+	$("#games_generated").text(games_completed);
+}
 
 var stop_button_clicked = false;
 function on_stop_button() {

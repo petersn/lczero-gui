@@ -24,8 +24,8 @@ function launch_computation() {
 		return;
 	}
 	// Write out the username and password for ./client to read in.
-	settings_state.Pass = $("#username").val();
-	fs.writeFileSync("settings.json", JSON.stringify(settings_state));
+	settings_state.Pass = $("#password").val();
+	fs.writeFileSync("settings.json", JSON.stringify(settings_state) + "\n");
 	// Switch to the computation page, which manages launching ./client.
 	set_page("computation.html");
 }
