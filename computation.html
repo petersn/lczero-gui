@@ -1,7 +1,7 @@
 <html>
 	<head>
-		<script src="js/chessboard.js"></script>
-		<link rel="stylesheet" href="css/chessboard.css" />
+		<script src="node_modules/chessboardjs/www/js/chessboard.js"></script>
+		<link rel="stylesheet" href="node_modules/chessboardjs/www/css/chessboard.css" />
 		<style>
 .centeredboard {
 	margin: auto;
@@ -42,6 +42,7 @@
 var display_board = ChessBoard("board1", {
 	position: "start",
 	moveSpeed: 100,
+	pieceTheme: "node_modules/chessboardjs/www/mg/chesspieces/wikipedia/{piece}.png"
 });
 var game_board = new chess.Chess();
 
